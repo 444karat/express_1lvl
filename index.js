@@ -9,7 +9,7 @@ const app = express();
 app.set('view engine', 'ejs')
 app.set('views', path.resolve(__dirname, 'ejs'))
 
-app.use(express.json());3
+app.use(express.json());
 app.use(express.static(path.resolve(__dirname, 'static')));
 app.use(reqTime);
 app.use(loger);
